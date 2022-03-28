@@ -1,0 +1,137 @@
+*{
+  padding: 0;
+}
+.container-sign-up {
+  background: linear-gradient(
+    180deg,
+    rgba(159, 225, 254, 0.4) 0%,
+    #cc8bff 100%
+  );
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.form-container-sign-up {
+  background: #ffffff;
+  margin: auto;
+  width: 800px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-top: 60px;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+.input-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-container { 
+  width: 55%;
+}
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+.avatar-box {
+  width: 230px;
+  height: 230px;
+  background: #555555;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.require-input-form {  
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.require-form-field {
+  width: 70%;
+  position: relative;
+}
+.require-form-field::before {
+  content: '*';
+  position: absolute;
+  right: -15px;
+  color: red;
+  top: 5px;
+}
+.Drop-down{
+  min-width: 250px !important;
+}
+.Drop-down > .MuiFormLabel-root {
+  margin-left: 15px;
+}
+.Drop-down:active  .MuiFormLabel-root{
+  display: none !important;
+}
+.require-input-form div,
+.Drop-down div {
+  border-radius: 20px;
+}
+
+.require-input-form > .MuiFormControl-root {
+  width: 80%;
+}
+
+.form-title {  
+  font-size: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+
+.submit-button {
+
+  width: 35%;
+  height: 40px;
+  margin: 15px 10px 0 !important;
+  color: #ffffff !important;
+}
+
+.sign-up-link {
+  cursor: pointer;
+  margin-top: 50px;
+  font-weight: bold;
+}
+.cancel-submit {
+  background-color: #F36161 !important;
+}
+.confirm-submit {
+  background-color: #3C67A9 !important;
+}
+.confirm-email-box {
+  width: 450px;
+  height: 170px;
+  background: #ffffff;
+  margin: auto;
+  margin-top: 250px;
+  border: 1px solid #222222;
+  border-radius: 10px;
+  /* text-align: center; */
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* position: absolute; */
+}
+.notication {
+  font-size: 20px !important;
+  margin-bottom: 15px !important;
+}
+.input-code-field {
+  width: 70% !important;
+}
+.send-button {
+  background-color: #F36161 !important;
+}
