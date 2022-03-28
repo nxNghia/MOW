@@ -1,0 +1,146 @@
+.MuiContainer-root {
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.back-button {
+  position: absolute !important;
+}
+
+.user-info__container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.user-info__left-side {
+  width: 30%;
+  box-sizing: border-box;
+  padding: 2%;
+}
+
+.user-info__right-side {
+  width: 70%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  max-height: 100%;
+  overflow: auto;
+}
+
+.user-info__avatar {
+  width: 100% !important;
+  padding-top: 100%;
+  height: auto !important;
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+
+.user-info__avatar > .MuiSvgIcon-root {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.user-info__avatar:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.user-info__container {
+  display: flex;
+}
+
+.user-info__container-left {
+  width: 50%;
+}
+
+.user-info__container-right {
+  width: 50%;
+}
+
+.user-info__basic-category {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.user-info__form-control {
+  margin-left: 10px;
+  width: 70%;
+}
+
+.user-info__form-control > .MuiFormControl-root {
+  width: 100%;
+}
+
+.user-info__action-cancel {
+  background-color: #ff9999 !important;
+  color: #ffffff !important;
+}
+
+.user-info__action-save {
+  background-color: #beffa7 !important;
+}
+
+.user-info__btn {
+  width: 100px;
+  margin-left: 20px !important;
+}
+
+.user-info__action {
+  text-align: right;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.user-info__category {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px 20px 20px 20px;
+}
+
+.user-info__category > h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.user-info__avatar-container {
+  position: relative;
+}
+
+.user-info__avatar-update {
+  opacity: 0;
+  position: absolute;
+  bottom: 10%;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  left: 0;
+  right: 0;
+  transition: opacity 250ms;
+}
+
+.user-info__avatar-container:hover .user-info__avatar-update {
+  opacity: 1;
+}
+
+.user-info__account-category {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.account-field {
+  width: 85%;
+}
+
+.account-info {
+  display: block;
+}

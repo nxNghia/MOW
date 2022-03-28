@@ -1,9 +1,4 @@
 .container {
-  background: linear-gradient(
-    180deg,
-    rgba(159, 225, 254, 0.4) 0%,
-    #cc8bff 100%
-  );
   height: 100%;
   width: 100%;
   position: relative;
