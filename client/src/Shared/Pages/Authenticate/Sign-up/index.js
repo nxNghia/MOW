@@ -1,18 +1,25 @@
-import { Box, Button, TextField, Typography, MenuItem, Select, FormControl, InputLabel, Container } from '@material-ui/core';
+import { Box, Button, TextField, Typography, MenuItem, Select, FormControl, InputLabel, Container, Avatar } from '@material-ui/core';
 import { useState } from 'react';
+import { useNavigate } from 'react-router';
 import Modal from '@material-ui/core/Modal';
 import './style.css';
 
 const SignUp = () => {
     const [open, setOpen] = useState(false);
+    const navigate = useNavigate();
     
     const handleOpen = () => {
-    setOpen(true);
+        setOpen(true);
     };
 
     const handleClose = () => {
-    setOpen(false);
+        setOpen(false);
     };
+
+    const handleCancel = () => {
+        navigate(-1);
+    }
+
     return (
         <Box className='container-sign-up'>
             <Box className='form-container-sign-up'>
@@ -35,7 +42,7 @@ const SignUp = () => {
                             <TextField className='require-form-field' size='small' variant='outlined' placeholder='Confirm Password' />
                         </form>
                         <Box>
-                            <Button variant='contained' className='submit-button cancel-submit'>
+                            <Button variant='contained' className='submit-button cancel-submit' onClick={handleCancel}>
                                 CANCEL
                             </Button>
                             <Button variant='contained' className='submit-button confirm-submit' onClick={handleOpen}>
@@ -44,7 +51,7 @@ const SignUp = () => {
                         </Box>
                     </Box>
                     <Box className='right-container'>
-                        <div className='avatar-box'></div>
+                        <Avatar className='avatar-container' />
                         <FormControl className="Drop-down">
                             <InputLabel className='place-holder'>Use as ... </InputLabel>
                             <Select
