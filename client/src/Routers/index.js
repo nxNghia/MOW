@@ -7,9 +7,11 @@ const PageRouter = () => {
     return (
         <Router>
             <Routes>
-                <Route path='/signin' exact element={<SignIn />} />
-                <Route path='/signup' exact element={<SignUp />} />
-                <Route path='/info' exact element={<UserInformation />} />
+                <Route path='/dev'>
+                    <Route path='signin' exact element={<SignIn />} />
+                    <Route path='signup' exact element={<SignUp />} />
+                    <Route path='info' exact element={<UserInformation />} />
+                </Route>
             </Routes>
         </Router>
     )
