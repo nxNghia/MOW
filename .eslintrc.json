@@ -21,6 +21,11 @@
         "quotes": [
             2,
             "single"
-        ]
+        ],
+        "no-const-assign":"warn",
+        "no-dupe-keys":"error",
+        "camelcase": [2, {"properties": "always"}],
+        "eqeqeq": ["error", "always"],
+        "no-trailing-spaces":"warn"
     }
 }
