@@ -1,7 +1,7 @@
 import { Box, Button, TextField, Typography } from '@material-ui/core';
 import SendIcon from '@material-ui/icons/Send';
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import Modal from '../../../Components/Modals';
 
 import './style.css';
@@ -9,6 +9,7 @@ import './style.css';
 const SignIn = () => {
     const [open, setOpen] = useState(false);
     const navigate = useNavigate();
+    const location = useLocation();
 
     const onCloseHandle = () => {
         setOpen(false);
@@ -33,7 +34,9 @@ const SignIn = () => {
     }
 
     const signupClickHandle = () => {
-        navigate('/signup');
+        const path = location.pathname.split('/').map(value => value === 'signin' ? 'signup' : value);
+
+        navigate(path.join('/'));
     }
 
     return (
